@@ -1,6 +1,16 @@
 class Dropdown {
   constructor(select, options) {
+    this.element = document.querySelector(select)
+    // console.log(this.element)
+    this.items = options.items
+    this.element.querySelector('.dropdown__label').textContent = this.items[0].label
+  }
+  open() {
+    this.element.classList.add('open')
+  }
 
+  close() {
+    this.element.classList.remove('open')
   }
 }
 
