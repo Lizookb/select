@@ -1,3 +1,10 @@
+class Dropdown {
+  constructor(select, options) {
+
+  }
+}
+
+
 const dropdown = new Dropdown('#dropdown', {
   items: [
     { label: 'Москва', id: 'spb' },
